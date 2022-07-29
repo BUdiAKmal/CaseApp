@@ -15,9 +15,14 @@
             app:layout_constraintTop_toTopOf="parent"
             android:layout_height="wrap_content"
             android:paddingEnd="10dp"
-            android:paddingStart="5dp"
-            tools:listitem="@layout/item_main_tab_fragment"
+            android:paddingStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            tools:listitem="@layout/item_main_tab_fragment1_layout"
             android:scrollbars="none"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             android:id="@+id/rv_mainTabFragment"/>
 
 

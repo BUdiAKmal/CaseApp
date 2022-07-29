@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:text="RecyclerView Item No.1"
+            android:text="RVItem No.X"
             android:layout_gravity="center_horizontal|center_vertical"/>
 
 </com.google.android.material.card.MaterialCardView>
