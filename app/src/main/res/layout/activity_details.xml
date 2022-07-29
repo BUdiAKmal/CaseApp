@@ -6,7 +6,7 @@
     android:padding="10dp"
     android:background="@drawable/ph_activity_bg"
     android:layout_height="match_parent"
-    tools:context=".DetailsActivity">
+    tools:context=".activities.DetailsActivity">
 
     <!-- Start - imgURL -->
     <com.google.android.material.card.MaterialCardView
