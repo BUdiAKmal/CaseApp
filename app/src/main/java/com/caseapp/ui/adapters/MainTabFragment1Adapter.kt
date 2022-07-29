@@ -1,5 +1,5 @@
 
-package com.caseapp.adapters
+package com.caseapp.ui.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -25,7 +25,7 @@ class MainTabFragment1Adapter(private val context: Context) :
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MainTabFragment1ViewHolder {
         return MainTabFragment1ViewHolder(
-            LayoutInflater.from(context).inflate(R.layout.item_main_tab_fragment1_layout, parent, false)
+            LayoutInflater.from(context).inflate(R.layout.item_maintab_fragment1_layout, parent, false)
         )
     } // End - onCreateViewHolder
 
@@ -56,19 +56,19 @@ class MainTabFragment1Adapter(private val context: Context) :
 
     // Start - MainTabFragment1ViewHolder
     inner class MainTabFragment1ViewHolder(maintabfragment1view: View) : RecyclerView.ViewHolder(maintabfragment1view) {
-        val imgProdMainTabFragment1 = maintabfragment1view.findViewById<ImageView>(R.id.iv_prodMainTabFragment1)
-        val cvMainTabFragment1: MaterialCardView = maintabfragment1view.findViewById(R.id.cv_maintabfragment1)
+        val ivMainTabFragment1 = maintabfragment1view.findViewById<ImageView>(R.id.iv_RVItem_MainTabFragment1)
+        val cvMainTabFragment1: MaterialCardView = maintabfragment1view.findViewById(R.id.cv_RVItem_MainTabFragment1)
 
 
         fun maintabfragment1BindView(MainTabFragment1Model: MainTabFragment1Model) {
             MainTabFragment1Model.apply {
-                val image = MainTabFragment1Model.prodImgMainTabFragment1
+                val image = MainTabFragment1Model.imgURLMainTabFragment1
 //                val title = dataItem.title
 //                val date = dataItem.date
                 image.let {
                     Glide.with(itemView.context).asBitmap()
                         .load(it)
-                        .into(imgProdMainTabFragment1)
+                        .into(ivMainTabFragment1)
 
                     Glide.with(itemView.context).asBitmap()
                         .load(it)

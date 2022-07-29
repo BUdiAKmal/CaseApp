@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ph_activity_bg"
-    tools:context=".activities.MainActivity">
+    tools:context=".ui.activities.MainActivity">
 
 
     <TextView
@@ -51,13 +51,13 @@
                 app:tabGravity="start"
                 app:tabIndicator="@drawable/ph_img"
                 app:tabIndicatorAnimationMode="elastic"
-                app:tabIndicatorColor="#000"
+                app:tabIndicatorColor="@color/white"
                 app:tabIndicatorGravity="stretch"
                 app:tabIndicatorHeight="5dp"
                 app:tabInlineLabel="true"
                 app:tabMode="scrollable"
-                app:tabSelectedTextColor="@color/white"
-                app:tabTextColor="@color/black" />
+                app:tabSelectedTextColor="@color/grey"
+                app:tabTextColor="@color/white" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

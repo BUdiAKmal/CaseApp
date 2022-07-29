@@ -5,21 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardCornerRadius="30dp"
-    android:id="@+id/cv_iten_main_tab"
+    android:id="@+id/cv_RVItem_MainTabFragment1"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
         <ImageView
-            android:id="@+id/iv_title_main_tab_fragment"
+            android:id="@+id/iv_RVItem_MainTabFragment1"
             android:layout_width="match_parent"
+            android:scaleType="centerCrop"
             android:layout_height="200dp"/>
 
         <TextView
-            android:id="@+id/tv_title_main_tab_fragment"
-            android:layout_width="wrap_content"
+            android:id="@+id/tv_titleText_MainTabFragment1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:text="RVItem No.X"
+            android:textAlignment="center"
+            android:text="Title RVItemNo.X MainTabFragment1"
             android:layout_gravity="center_horizontal|center_vertical"/>
 
 </com.google.android.material.card.MaterialCardView>

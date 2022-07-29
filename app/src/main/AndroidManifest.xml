@@ -14,10 +14,10 @@
         android:theme="@style/Theme.CaseApp"
         tools:targetApi="31">
         <activity
-            android:name=".activities.DetailsActivity"
+            android:name="com.caseapp.ui.activities.DetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.MainActivity"
+            android:name="com.caseapp.ui.activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
