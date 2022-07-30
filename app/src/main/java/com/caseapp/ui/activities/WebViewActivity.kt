@@ -27,6 +27,7 @@ class WebViewActivity : AppCompatActivity() {
         // Start - Assign Open New URL
         val wBS = intent
         val webSite = wBS.getStringExtra("btnURLMainTabFragment1")
+
         // End - Assign Open New URL
 
         // Start - full screen

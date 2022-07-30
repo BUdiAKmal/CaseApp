@@ -101,7 +101,7 @@
     <com.google.android.material.button.MaterialButton
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:text="Go To WebView"
+        android:text="Go To WebView With URL From RecyclerView"
         android:textStyle="bold"
         android:id="@+id/btn_wvURL"
         android:textSize="20sp"

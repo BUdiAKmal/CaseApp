@@ -61,6 +61,14 @@ class DetailsActivity : AppCompatActivity() {
                 .skipMemoryCache(true)
         }
 
+        prodBundle?.getString("btnURLMainTabFragment1").let {
+          btn_wvURL.setOnClickListener {
+              val gotoWebView = Intent(this@DetailsActivity, WebViewActivity::class.java)
+              gotoWebView.putExtra("btnURLMainTabFragment1", gotoWebView)
+              startActivity(gotoWebView)
+          }
+        }
+
         } //  End  - getString from RecyclerView Main Activity }
 
 } // End - Class

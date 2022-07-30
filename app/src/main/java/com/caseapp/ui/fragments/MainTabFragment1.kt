@@ -74,7 +74,7 @@ class MainTabFragment1 : Fragment() {
                 "https://images.unsplash.com/photo-1525896969906-0a4806967ef0",
                 "Title RVItemNo.4 MainTabFragment1",
                 "Desc RVItenNo.4 MainTabFragment1",
-                "https://blgger.com"
+                "https://blogger.com"
             )
         )
 
