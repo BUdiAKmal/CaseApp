@@ -13,7 +13,6 @@
             android:layout_width="match_parent"
             android:src="@drawable/ph_img"
             android:scaleType="centerCrop"
-            app:tint="@color/white"
             android:layout_height="200dp"/>
 
         <TextView
@@ -22,7 +21,7 @@
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:textColor="@color/grey"
+            android:textColor="@color/white"
             android:textAlignment="center"
             android:text="Title RVItemNo.X MainTabFragment1"
             android:layout_gravity="center_horizontal|center_vertical"/>

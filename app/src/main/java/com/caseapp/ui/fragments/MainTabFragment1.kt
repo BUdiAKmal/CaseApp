@@ -52,7 +52,7 @@ class MainTabFragment1 : Fragment() {
 
         addMainTabFragment1ModelList.add(
             MainTabFragment1Model(
-                "https://eqinvi.com/wp-content/uploads/2022/07/cv1.png",
+                "https://images.unsplash.com/photo-1585435465945-bef5a93f8849",
                 "Title RVItemNo.1 MainTabFragment1",
                 "Desc RVItenNo.1 MainTabFragment1",
                 "https://google.com"
@@ -60,7 +60,7 @@ class MainTabFragment1 : Fragment() {
         )
         addMainTabFragment1ModelList.add(
             MainTabFragment1Model(
-                "https://eqinvi.com/wp-content/uploads/2022/07/cv2.png",
+                "https://images.unsplash.com/photo-1487846698364-db1316e3d140",
                 "Title RVItemNo.2 MainTabFragment1",
                 "Desc RVItenNo.2 MainTabFragment1",
                 "https://youtube.com"
@@ -68,7 +68,7 @@ class MainTabFragment1 : Fragment() {
         )
         addMainTabFragment1ModelList.add(
             MainTabFragment1Model(
-                "https://eqinvi.com/wp-content/uploads/2022/07/cv3.png",
+                "https://images.unsplash.com/photo-1512295767273-ac109ac3acfa",
                 "Title RVItemNo.3 MainTabFragment1",
                 "Desc RVItenNo.3 MainTabFragment1",
                 "https://gmail.com"
@@ -76,7 +76,7 @@ class MainTabFragment1 : Fragment() {
         )
         addMainTabFragment1ModelList.add(
             MainTabFragment1Model(
-                "https://eqinvi.com/wp-content/uploads/2022/07/cv4.png",
+                "https://images.unsplash.com/photo-1525896969906-0a4806967ef0",
                 "Title RVItemNo.4 MainTabFragment1",
                 "Desc RVItenNo.4 MainTabFragment1",
                 "https://blgger.com"
