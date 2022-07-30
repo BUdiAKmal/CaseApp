@@ -7,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.caseapp.R
-import com.caseapp.ui.adapters.ViewPagerAdapter
 import com.caseapp.ui.fragments.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_details.*
@@ -34,7 +33,6 @@ class DetailsActivity : AppCompatActivity() {
         ) // End - full screen
 
 
-        setUpTabs() // Setup TabLayout
         initView() // Setup getString from RecyclerView Main Activity
 
     } // End - OnCreate
@@ -61,16 +59,6 @@ class DetailsActivity : AppCompatActivity() {
                 .skipMemoryCache(true)
         }
     } //  End  - getString from RecyclerView Main Activity
-
-
-    // Start - TabLayout
-    private fun setUpTabs() {
-        val adapter = ViewPagerAdapter(supportFragmentManager)
-        adapter.addFragment(MainTabFragment1(), "MainTab1")
-        adapter.addFragment(MainTabFragment1(), "MainTab2")
-        viewPager_tabLayout.adapter = adapter
-        tabs.setupWithViewPager(viewPager_tabLayout)
-    } // End - TabLayout
 
 
 } // End - Class

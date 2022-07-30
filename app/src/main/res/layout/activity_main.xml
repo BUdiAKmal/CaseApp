@@ -4,9 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ph_activity_bg"
+    android:background="@color/white"
     tools:context=".ui.activities.MainActivity">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/internet_Layout"
+        android:layout_width="match_parent"
+        android:background="@drawable/ph_activity_bg"
+        android:layout_height="match_parent">
 
     <TextView
         android:layout_width="match_parent"
@@ -15,6 +20,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:textSize="25sp"
         android:textStyle="bold"
+        android:textColor="@color/grey"
         android:textAlignment="center"
         android:layout_marginTop="20dp"
         android:id="@+id/tv_titleActivity"
@@ -48,7 +54,7 @@
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:tabGravity="start"
+                app:tabGravity="center"
                 app:tabIndicator="@drawable/ph_img"
                 app:tabIndicatorAnimationMode="elastic"
                 app:tabIndicatorColor="@color/white"
@@ -72,5 +78,7 @@
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
         tools:ignore="MissingConstraints" />
     <!--    End - Detail-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

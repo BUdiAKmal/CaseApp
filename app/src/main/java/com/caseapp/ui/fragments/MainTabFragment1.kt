@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.caseapp.R
 import com.caseapp.ui.adapters.MainTabFragment1Adapter
 import com.caseapp.listeners.OnItemClickListener
@@ -22,6 +23,7 @@ class MainTabFragment1 : Fragment() {
 
     lateinit var mainTabFragment1Adapter: MainTabFragment1Adapter  // Initialize Adapter
 //    private val lLM = LinearLayoutManager.VERTICAL // Initialize layoutManager
+    private val sLM = LinearLayoutManager(context) // Initialize layoutManager
     val addMainTabFragment1ModelList: MutableList<MainTabFragment1Model> = ArrayList() // Initialize listModel
     private var urlMainTabFragment1 = arrayOfNulls<String>(4) // Initialize URL Direction WebView
 
@@ -54,7 +56,7 @@ class MainTabFragment1 : Fragment() {
 
     // Start - intView listModel
     private fun initViewMainTabFragment1() {
-//        rv_mainTabFragment1.layoutManager = lLM
+        rv_mainTabFragment1.layoutManager = sLM
         mainTabFragment1Adapter = MainTabFragment1Adapter(requireActivity())
         rv_mainTabFragment1.adapter = mainTabFragment1Adapter
 
