@@ -22,10 +22,8 @@ class MainTabFragment1 : Fragment() {
 
 
     lateinit var mainTabFragment1Adapter: MainTabFragment1Adapter  // Initialize Adapter
-//    private val lLM = LinearLayoutManager.VERTICAL // Initialize layoutManager
     private val sLM = LinearLayoutManager(context) // Initialize layoutManager
     val addMainTabFragment1ModelList: MutableList<MainTabFragment1Model> = ArrayList() // Initialize listModel
-    private var urlMainTabFragment1 = arrayOfNulls<String>(4) // Initialize URL Direction WebView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -39,14 +37,6 @@ class MainTabFragment1 : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        // Start - Webview URL
-        urlMainTabFragment1[0] = "https://eqinvi.com/wbm0101"
-        urlMainTabFragment1[1] = "https://eqinvi.com/wb_moody"
-        urlMainTabFragment1[2] = "https://eqinvi.com/feqinvi"
-        urlMainTabFragment1[3] = "https://eqinvi.com/eqinvi"
-        // End - Webview URL
-
 
         initViewMainTabFragment1() // SetUp initView listModel
         actionMainTabFragment1() // SetUp actionMainTabFragment1

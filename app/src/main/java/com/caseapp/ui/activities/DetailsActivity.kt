@@ -45,7 +45,6 @@ class DetailsActivity : AppCompatActivity() {
         tv_titleText.text = prodBundle?.getString("titleTextMainTabFragment1")
         tv_descText.text = prodBundle?.getString("descTextMainTabFragment1")
 
-//        btn_keranjang.text = prodBundle?.getString("urlKeranjang")
         prodBundle?.getString("imgURLMainTabFragment1").let {
             Glide.with(this).asBitmap()
                 .load(it)

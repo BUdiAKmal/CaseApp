@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
@@ -57,28 +58,29 @@ class MainTabFragment1Adapter(private val context: Context) :
     // Start - MainTabFragment1ViewHolder
     inner class MainTabFragment1ViewHolder(maintabfragment1view: View) : RecyclerView.ViewHolder(maintabfragment1view) {
         val ivMainTabFragment1 = maintabfragment1view.findViewById<ImageView>(R.id.iv_RVItem_MainTabFragment1)
+        val tvTitleMainTabFragment1 = maintabfragment1view.findViewById<TextView>(R.id.tv_titleText_MainTabFragment1)
         val cvMainTabFragment1: MaterialCardView = maintabfragment1view.findViewById(R.id.cv_RVItem_MainTabFragment1)
 
 
         fun maintabfragment1BindView(MainTabFragment1Model: MainTabFragment1Model) {
+
             MainTabFragment1Model.apply {
                 val image = MainTabFragment1Model.imgURLMainTabFragment1
-//                val title = dataItem.title
-//                val date = dataItem.date
                 image.let {
-                    Glide.with(itemView.context).asBitmap()
+                    Glide.with(itemView.context)
                         .load(it)
                         .into(ivMainTabFragment1)
 
-                    Glide.with(itemView.context).asBitmap()
+                    Glide.with(itemView.context)
                         .load(it)
                         .centerCrop()
                         .fitCenter()
                         .diskCacheStrategy(DiskCacheStrategy.NONE)
                         .skipMemoryCache(true)
-                        .transition(BitmapTransitionOptions.withCrossFade())
                 }
             }
+
+            tvTitleMainTabFragment1.text = MainTabFragment1Model.titleTextMainTabFragment1
         }
 
         init {
