@@ -1,5 +1,7 @@
 package com.caseapp.ui.activities
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
@@ -7,16 +9,16 @@ import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.caseapp.R
+import com.caseapp.models.MainTabFragment1Model
 import com.caseapp.ui.fragments.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_details.*
+import kotlinx.android.synthetic.main.activity_details.view.*
 
 
 class DetailsActivity : AppCompatActivity() {
 
     var prodBundle: Bundle? = null // Initialize getString (bundle) from MainActivity
-    private var urls = arrayOfNulls<String>(10) // Initialize URL Direction
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,6 +44,7 @@ class DetailsActivity : AppCompatActivity() {
     fun initView() {
         prodBundle = intent.extras
 
+
         tv_titleText.text = prodBundle?.getString("titleTextMainTabFragment1")
         tv_descText.text = prodBundle?.getString("descTextMainTabFragment1")
 
@@ -57,8 +60,8 @@ class DetailsActivity : AppCompatActivity() {
                 .diskCacheStrategy(DiskCacheStrategy.NONE)
                 .skipMemoryCache(true)
         }
-    } //  End  - getString from RecyclerView Main Activity
 
+        } //  End  - getString from RecyclerView Main Activity }
 
 } // End - Class
 

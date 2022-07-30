@@ -20,7 +20,6 @@ import kotlinx.android.synthetic.main.fragment1_main_tab.*
 
 class MainTabFragment1 : Fragment() {
 
-
     lateinit var mainTabFragment1Adapter: MainTabFragment1Adapter  // Initialize Adapter
     private val sLM = LinearLayoutManager(context) // Initialize layoutManager
     val addMainTabFragment1ModelList: MutableList<MainTabFragment1Model> = ArrayList() // Initialize listModel
@@ -30,17 +29,13 @@ class MainTabFragment1 : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment1_main_tab, container, false)
-
-
     }
-
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         initViewMainTabFragment1() // SetUp initView listModel
         actionMainTabFragment1() // SetUp actionMainTabFragment1
-
 
     } // End - OnCreate
 
@@ -86,7 +81,7 @@ class MainTabFragment1 : Fragment() {
         mainTabFragment1Adapter.setMainTabFragment1(addMainTabFragment1ModelList)
     } // End - intView listModel
 
-    // Start - putExtra to SingleProduct
+    // Start - putExtra
     fun actionMainTabFragment1() {
         mainTabFragment1Adapter.setOnClickItemListenerMainTabFragment1(object : OnItemClickListener {
             override fun onItemClick(item: View, position: Int) {
@@ -122,8 +117,7 @@ class MainTabFragment1 : Fragment() {
                 startActivity(i)
             }
         })
-    } // End - putExtra to SingleProduct
-
+    } // End - putExtra
 
 }
 

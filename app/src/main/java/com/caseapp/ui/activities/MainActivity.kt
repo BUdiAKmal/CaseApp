@@ -11,11 +11,9 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
 
         // Start - full screen
         val window = window
@@ -25,7 +23,6 @@ class MainActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         ) // End - full screen
-
 
         setUpTabs() // Setup TabLayout
 

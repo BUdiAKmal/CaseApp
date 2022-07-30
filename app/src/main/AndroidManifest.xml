@@ -17,12 +17,15 @@
         android:theme="@style/Theme.CaseApp"
         tools:targetApi="31">
         <activity
-            android:name="com.caseapp.ui.activities.DetailsActivity"
+            android:name=".ui.activities.WebViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.DetailsActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name="com.caseapp.ui.activities.MainActivity"
+            android:name=".ui.activities.MainActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity">

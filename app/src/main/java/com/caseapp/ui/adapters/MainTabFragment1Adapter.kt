@@ -30,16 +30,13 @@ class MainTabFragment1Adapter(private val context: Context) :
         )
     } // End - onCreateViewHolder
 
-
     override fun getItemCount(): Int {
         return MainTabFragment1Model.size
     }  // End - getItem
 
-
     override fun onBindViewHolder(holder: MainTabFragment1ViewHolder, position: Int) {
         holder.maintabfragment1BindView(MainTabFragment1Model[position])
     } // End - onBindViewHolder
-
 
     // Start - setMainTabFragment1
     fun setMainTabFragment1(data: List<MainTabFragment1Model>) {
@@ -48,12 +45,10 @@ class MainTabFragment1Adapter(private val context: Context) :
         notifyDataSetChanged()
     } // End - setMainTabFragment1
 
-
     // Start - getMainTabFragment1
     fun getMainTabFragment1(): MutableList<MainTabFragment1Model> {
         return MainTabFragment1Model
     } // End - getMainTabFragment1
-
 
     // Start - MainTabFragment1ViewHolder
     inner class MainTabFragment1ViewHolder(maintabfragment1view: View) : RecyclerView.ViewHolder(maintabfragment1view) {
@@ -61,9 +56,7 @@ class MainTabFragment1Adapter(private val context: Context) :
         val tvTitleMainTabFragment1 = maintabfragment1view.findViewById<TextView>(R.id.tv_titleText_MainTabFragment1)
         val cvMainTabFragment1: MaterialCardView = maintabfragment1view.findViewById(R.id.cv_RVItem_MainTabFragment1)
 
-
         fun maintabfragment1BindView(MainTabFragment1Model: MainTabFragment1Model) {
-
             MainTabFragment1Model.apply {
                 val image = MainTabFragment1Model.imgURLMainTabFragment1
                 image.let {
@@ -79,13 +72,11 @@ class MainTabFragment1Adapter(private val context: Context) :
                         .skipMemoryCache(true)
                 }
             }
-
             tvTitleMainTabFragment1.text = MainTabFragment1Model.titleTextMainTabFragment1
         }
 
         init {
             cvMainTabFragment1.setOnClickListener { onSelectedListenerMainTabFragment1.onItemClick(it, layoutPosition) }
-
         }
 
     } // End - MainTabFragment1BindViewHolder
